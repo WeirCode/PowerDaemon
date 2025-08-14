@@ -1,53 +1,76 @@
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
 #include <unistd.h>
-#include <sys/types.h>
-#include <sys/wait.h>
+#include <time.h>
+#include <fcntl.h>
+#include <sys/syscall.h>
+#include <linux/perf_event.h>
+#include <asm/unistd.h>
+#include <errno.h>
 
-int main(int argc, char *argv[]) {
-    pid_t pid;
-    int status;
+static long perf_event_open(struct perf_event_attr *hw_event, pid_t pid,
+                            int cpu, int group_fd, unsigned long flags)
+{
+    return syscall(__NR_perf_event_open, hw_event, pid, cpu,
+                group_fd, flags);
+}
 
-    // Default time to run the perf stat in seconds
-    int duration = 10;
+// Get current time in ISO 8601
+void get_timestamp(char *buffer, size_t size)
+{
+    time_t now = time(NULL);
+    struct tm *t = localtime(&now);
+    strftime(buffer, size, "%Y-%m-%d %H:%M:%S", t);
+}
 
-    // If duration is provided via command line argument
-    if (argc == 2) {
-        duration = atoi(argv[1]);
-    }
+int main()
+{
+    struct perf_event_attr pea;
+    memset(&pea, 0, sizeof(struct perf_event_attr));
+    pea.type = PERF_TYPE_POWER;
+    pea.config = PERF_COUNT_POWER_ENERGY_PKG;
+    pea.size = sizeof(struct perf_event_attr);
+    pea.disabled = 0;
+    pea.exclude_kernel = 0;
+    pea.exclude_hv = 0;
 
-    // Fork to run the perf command in a child process
-    pid = fork();
-
-    if (pid == -1) {
-        // Fork failed
-        perror("Failed to fork");
+    // Monitor CPU 0 system-wide
+    int fd = perf_event_open(&pea, -1, 0, -1, 0);
+    if (fd == -1) {
+        perror("perf_event_open");
         return 1;
     }
 
-    if (pid == 0) {
-        // Child process: Run the perf stat command to monitor energy events
-        char command[256];
-        snprintf(command, sizeof(command), 
-                 "perf stat -e power/energy-pkg/ sleep %d", duration);
-
-        // Execute the command
-        if (system(command) == -1) {
-            perror("Failed to run perf stat");
-            return 1;
-        }
-
-        exit(0);
-    } else {
-        // Parent process: Wait for the child process to finish
-        waitpid(pid, &status, 0);
-
-        if (WIFEXITED(status)) {
-            printf("Perf tracking finished.\n");
-        } else {
-            printf("Perf tracking failed.\n");
-        }
+    FILE *csv = fopen("energy_log.csv", "w");
+    if (!csv) {
+        perror("fopen");
+        close(fd);
+        return 1;
     }
 
+    fprintf(csv, "timestamp,energy_uj\n");
+
+    uint64_t prev_value = 0;
+    read(fd, &prev_value, sizeof(uint64_t));
+
+    for (int i = 0; i < 30; i++) { // 30 seconds sample
+        sleep(1);
+
+        uint64_t value;
+        read(fd, &value, sizeof(uint64_t));
+
+        char timestamp[64];
+        get_timestamp(timestamp, sizeof(timestamp));
+
+        fprintf(csv, "%s,%llu\n", timestamp, (unsigned long long)(value));
+        fflush(csv);
+    }
+
+    fclose(csv);
+    close(fd);
     return 0;
 }
+
