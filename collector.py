@@ -4,155 +4,278 @@ import json
 import sys
 import os
 import matplotlib.pyplot as plt
-
-from pathlib import Path
-
-EVENTS_FILE = Path.home() / ".powersensor_events.json"
+from itertools import zip_longest
+import math
 
 def parse_args():
+    #ArgumentParser Class from Library
     parser = argparse.ArgumentParser()
+    #subparser for main command
     subparsers = parser.add_subparsers(dest="command", required=True)
+    #init subparser - parser contains sub_parsers which contain arguments
     subparsers.add_parser("init", help="Collect perf events and pc info")
-    
-    run_parser = subparsers.add_parser("run", help="Run the power sensor.")
-    run_parser.add_argument("cgroup", help="Path to the cgroup to monitor.")
+    #run subparser
+    run_parser = subparsers.add_parser("run", help="Run the power sensor")
+    #arguments for run subparser
+    run_parser.add_argument("cgroup", type=str, help="Path to the cgroup to monitor.")
     run_parser.add_argument("time", type=float, help="Time in seconds to monitor.")
     run_parser.add_argument("frequency", type=float, help="Sampling frequency (Hz).")
     run_parser.add_argument("detail", type=int, help="Detail level from init.")
 
+    #return arguments
     return parser.parse_args()
 
-def validate_run_args(args):
-    # Check numbers
-    if args.time <= 0:
-        sys.exit("Error: time must be > 0")
-    if args.frequency <= 0:
-        sys.exit("Error: frequency must be > 0")
-
-    # Load events file for detail validation
-    if not EVENTS_FILE.exists():
-        sys.exit("Error: no events file found, run 'init' first.")
-    with open(EVENTS_FILE) as f:
-        events_data = json.load(f)
-    max_detail = max(events_data.keys(), key=int)
-    if not (0 <= args.detail <= int(max_detail)):
-        sys.exit(f"Error: detail must be between 0 and {max_detail}")
-
-    # Check cgroup exists
-    if not os.path.exists(args.cgroup):
-        sys.exit(f"Error: cgroup '{args.cgroup}' does not exist.")
-
-
 def init_events():
-    print("[*] Running 'perf list --json' to get available events...")
+    print("[*] Running 'perf list --json pmu'")
     result = subprocess.run(
         ["perf", "list", "--json", "pmu"],
         capture_output=True,
         text=True
     )
-    
     if result.returncode != 0:
         sys.exit(f"Error: failed to run 'perf list --json'\n{result.stderr}")
-
+    print("Parsing into a dictionary")
     try:
-        events_data = json.loads(result.stdout)
+        events_data = json.loads(result.stdout.replace("\n",""))
     except json.JSONDecodeError as e:
         sys.exit(f"Error parsing JSON from perf list: {e}")
-
-    print(events_data)
     
-    # Normalize to a flat list of groups
-    if isinstance(events_data, dict):
-        groups = []
-        for section in events_data.values():
-            if isinstance(section, list):
-                groups.extend(section)
-    elif isinstance(events_data, list):
-        groups = events_data
-    else:
-        sys.exit("Unexpected JSON format from perf list")
-
-    # Filter for power/ or msr/ events
-    filtered_events = []
-    for group in groups:
-        for ev in group.get("event_list", []):
-            name = ev.get("name", "")
-            if name.startswith("power/") or name.startswith("msr/"):
-                filtered_events.append(name)
-
-    if not filtered_events:
-        sys.exit("No power/ or msr/ events found from perf list.")
-
+    event_dict = {}
+    for event in events_data:
+        unit = event.get("Unit")
+        if unit == "cpu_core":
+            name = f"cpu_core/{event.get("EventName")}/"
+        else:
+            name = event.get("EventName")
+        encoding = event.get("Encoding")
+        eventType = event.get("EventType", None)
+        if name and encoding:
+            event_dict[name] = {"Unit":unit, "Name":name, "Type":eventType, "Encoding":encoding}
+    print("Creating Detail levels")
     # Assign detail levels (could be same if list is short)
     events_by_detail = {
-        0: filtered_events[:3],   # low detail = fewer events
-        1: filtered_events[:min(6, len(filtered_events))],
-        2: filtered_events        # all
+        0:{"system":[], "group":[]},
+        1:{"system":[], "group":[]}
     }
+    for e in event_dict:
+        if event_dict[e]["Unit"] == "power":
+            events_by_detail[0]["system"].append(event_dict[e])
+        elif event_dict[e]["Unit"] == "msr":
+            events_by_detail[1]["system"].append(event_dict[e])
+            events_by_detail[1]["group"].append(event_dict[e])
+        elif event_dict[e]["Unit"] == "cpu_core" and event_dict[e]["Type"] and event_dict[e]["Type"] == "Kernel PMU event" and event_dict[e]["Unit"] in ["cpu_core", "cpu_atom"]:
+            events_by_detail[1]["system"].append(event_dict[e])
+            events_by_detail[1]["group"].append(event_dict[e])
+            if event_dict[e]["Name"] == "cpu_core/instructions/":
+                events_by_detail[0]["system"].append(event_dict[e])
+                events_by_detail[0]["group"].append(event_dict[e])
 
-    with open(EVENTS_FILE, "w") as f:
+    with open("pc_info.json", "w") as f:
         json.dump(events_by_detail, f, indent=2)
 
-    print(f"[*] Saved {len(filtered_events)} power/msr events into {EVENTS_FILE}")
+    print(f"[*] Saved events into file")
 
+def validate_run_args(args):
+    info_file = "pc_info.json"
+    # Check numbers
+    print("Checking args")
+    print("Checking time,frequency > 0")
+    if args.time <= 0:
+        sys.exit("Error: time must be > 0")
+    if args.frequency <= 100:
+        sys.exit("Error: frequency must be > 100")
 
+    print("Checking cgroup")
+    # Check cgroup exists
+    if args.cgroup != "":
+        if not os.path.exists(f"/sys/fs/cgroup/{args.cgroup}"):
+            sys.exit(f"Error: cgroup '{args.cgroup}' does not exist.")
+    
+    print("Checking if pc_info has been saved")
+    try:
+        with open(info_file) as f:
+            print(f"file exists")
+    except:
+        sys.exit("Error: no info file found, run 'init' first.")
+    
+    if not (0 <= args.detail <= 2):
+        sys.exit(f"Error: detail must be between 0 and 2")
 
 def run_monitor(args):
     validate_run_args(args)
-    with open(EVENTS_FILE) as f:
+
+    print("collecting events to track")
+    with open("pc_info.json") as f:
         events_data = json.load(f)
-    events = events_data[str(args.detail)] if str(args.detail) in events_data else events_data[args.detail]
 
-    # Build perf stat commands
-    time_arg = str(args.time)
-    events_arg = ",".join(events)
+    print("Creating events list")
+    sysevents = []
+    groupevents = []
+    for i in range(0, args.detail + 1):
+        try:
+            for j in events_data[str(i)]["system"]:
+                sysevents.append(j["Name"])
+            for x in events_data[str(i)]["group"]:
+                groupevents.append(x["Name"])
+        except:
+            continue
+    sysevents_arg = ",".join(sysevents)
+    groupevents_arg = ",".join(groupevents)
+    print(sysevents_arg)
+    print(groupevents_arg)
+    sevents = len(sysevents)
+    cgevents = len(groupevents)
+    # Interval in ms
+    interval = int(args.frequency)  # e.g., 1000 for 1s
+    time_arg = int(args.time)    # total run time (s)
 
-    sys_cmd = ["perf", "stat", "-a", "-e", events_arg, "sleep", time_arg]
-    cg_cmd = ["perf", "stat", "-G", args.cgroup, "-e", events_arg, "sleep", time_arg]
+    print("Running Perf")
+    #Shell method
+    #cmd = f"perf stat -I {interval} -e {sysevents_arg} -a -- perf stat -I {interval} -e {groupevents_arg} -a --for-each-cgroup {args.cgroup} sleep {time_arg}"
+    #result = subprocess.run(cmd, capture_output=True, text=True, shell=True)
+    #print(result.stderr)
+    #parse_stat(result.stderr)
+    
+    results = []
+    # parallel method
+    syscmd = ["perf", "stat", "-I", str(interval), "-a", "-e", sysevents_arg, "sleep", str(time_arg)]
+    # Cgroup
+    if args.cgroup != "":
+        groupcmd = ["perf", "stat", "-I", str(interval), "-e", groupevents_arg, "-a", "--for-each-cgroup", args.cgroup, "sleep", str(time_arg)]
+        sysproc = subprocess.Popen(syscmd, stderr=subprocess.PIPE, text=True)
+        groupproc = subprocess.Popen(groupcmd, stderr=subprocess.PIPE, text=True)
+        sys_chunks = read_perf_chunks(sysproc, sevents)
+        cg_chunks  = read_perf_chunks(groupproc, cgevents)
+        for line in zip_longest(sys_chunks, cg_chunks):
+            results.append(parse_perf_line(line,True,args.cgroup))
+            #parse_perf_line(sys_line,cg_line)
+            # cg_line = first line from cgroup perf
+    else:
+        sysproc = subprocess.Popen(syscmd, stderr=subprocess.PIPE, text=True)
+        sys_chunks = read_perf_chunks(sysproc, sevents)
+        for line in zip(sys_chunks):
+            results.append(parse_perf_line(line,False))
+    
+    sysproc.wait()
+    with open("measurement.json", "w") as f:
+        json.dump(results, f, indent=2)
 
-    print("[*] Running system-wide perf stat...")
-    sys_out = subprocess.run(sys_cmd, capture_output=True, text=True)
-    print("[*] Running cgroup perf stat...")
-    cg_out = subprocess.run(cg_cmd, capture_output=True, text=True)
+def read_perf_chunks(proc, events_per_interval):
+    chunk = []
+    for line in proc.stderr:
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        chunk.append(line)
+        if len(chunk) == events_per_interval:
+            yield chunk
+            chunk = []
+    if chunk:
+        yield chunk
 
-    # Parse outputs into dict {event: value}
-    sys_results = parse_perf_output(sys_out.stderr)
-    cg_results = parse_perf_output(cg_out.stderr)
+def parse_perf_line(line, cg, cgname=None):
+    result = {}
+    print(line)
+    sysline = line[0]
+    result["timestamp"] = float(sysline[0].split()[0])
+    result["system"] = {}
+    for i in sysline:
+        measure = i.split()
+        if "<not counted>" in i:
+            result["system"][measure[-1]] = 0
+            continue
+        
+        if "Joules" in i:
+            result["system"][measure[3]] = float(measure[1].replace(",",""))
+            continue
+        result["system"][measure[2]] = float(measure[1].replace(",",""))
+    if cg:
+        cgline = line[1]
+        result[cgname] = {}
+        for i in cgline:
+            measure = i.split()
+            if "<not counted>" in i and "Joules" in i:
+                result[cgname][measure[4]] = 0
+                continue
+            if "<not counted>" in i:
+                result[cgname][measure[3]] = 0
+                continue
+            
+            if "Joules" in i:
+                result[cgname][measure[3]] = float(measure[1].replace(",",""))
+                continue
+            result[cgname][measure[2]] = float(measure[1].replace(",",""))
+    
+    return result
 
-    # Graph
-    plot_comparison(sys_results, cg_results)
+def graph(cgname, plott=0):
+    with open("measurement.json") as f:
+        data = json.load(f)
+    time = []
+    syspow = []
+    sysinstr = []
+    groupinstr = []
+    for i in data:
+        time.append(i["timestamp"])
+        sysinstr.append(i["system"]["cpu_core/instructions/"])
+        syspow.append(i["system"]["power/energy-cores/"])
+        groupinstr.append(i[cgname]["cpu_core/instructions/"])
+    est_power = []
+    for p, si, gi in zip(syspow, sysinstr, groupinstr):
+        est_power.append(p * gi / si)
+    
+    # Plot
+    if plott == 0:
+        plt.figure(figsize=(10,6))
+        plt.plot(time, syspow, label="System Power", marker="o")
+        plt.plot(time, est_power, label="Scaled (sysinstr/groupinstr)", marker="x")
 
-def parse_perf_output(output):
-    results = {}
-    for line in output.splitlines():
-        parts = line.strip().split()
-        if len(parts) >= 2 and parts[0].replace(",", "").isdigit():
-            val = int(parts[0].replace(",", ""))
-            event_name = parts[1]
-            results[event_name] = val
-    return results
+        plt.xlabel("Time")
+        plt.ylabel("Value")
+        plt.title("System vs Scaled Power")
+        plt.legend()
+        plt.grid(True)
 
-def plot_comparison(sys_data, cg_data):
-    events = list(sys_data.keys())
-    sys_vals = [sys_data[e] for e in events]
-    cg_vals = [cg_data.get(e, 0) for e in events]
+        plt.show()
+    if plott == 1:
+        fig, ax1 = plt.subplots()
 
-    x = range(len(events))
-    plt.bar(x, sys_vals, width=0.4, label="System", align="center")
-    plt.bar([i + 0.4 for i in x], cg_vals, width=0.4, label="Cgroup", align="center")
-    plt.xticks([i + 0.2 for i in x], events, rotation=90)
-    plt.ylabel("Count")
+    # System power on left y-axis
+        ax1.plot(time, syspow, label="System Power", color="blue")
+        ax1.set_ylabel("System Power (Joules)", color="blue")
+
+    # Cgroup power on right y-axis
+        ax2 = ax1.twinx()
+        ax2.plot(time, est_power, label="Cgroup Estimated Power", color="red")
+        ax2.set_ylabel("Cgroup Power (Joules)", color="red")
+
+        plt.xlabel("Time (s)")
+        plt.title("System vs Cgroup Power")
+        plt.show()
+    plt.figure(figsize=(10,6))
+    plt.plot(time, sysinstr, label="System Instructions", marker="o")
+    plt.plot(time, groupinstr, label="group instructions", marker="x")
+
+    plt.xlabel("Time")
+    plt.ylabel("Value")
+    plt.title("System vs group instr")
     plt.legend()
-    plt.tight_layout()
+    plt.grid(True)
+
     plt.show()
 
 
-def main():
+def main(): #LATER MAKE CGROUP A LIST
+    print("Parsing Arguments")
     args = parse_args()
+    print(f"returned args : {args}")
     if args.command == "init":
+        print("INIT RUN")
         init_events()
     elif args.command == "run":
+        print("RUN COMMAND")
         run_monitor(args)
+        graph(args.cgroup)
 
 if __name__ == "__main__":
     main()

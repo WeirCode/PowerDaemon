@@ -1,0 +1,2466 @@
+[
+  {
+    "timestamp": 0.400438039,
+    "system": {
+      "cpu_core/instructions/": 2323928885.0,
+      "power/energy-cores/": 2.91,
+      "power/energy-pkg/": 5.68
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 0.803112839,
+    "system": {
+      "cpu_core/instructions/": 1344169902.0,
+      "power/energy-cores/": 1.66,
+      "power/energy-pkg/": 4.32
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 1.204952316,
+    "system": {
+      "cpu_core/instructions/": 3226252110.0,
+      "power/energy-cores/": 2.69,
+      "power/energy-pkg/": 5.47
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 1.607457632,
+    "system": {
+      "cpu_core/instructions/": 2200463907.0,
+      "power/energy-cores/": 1.38,
+      "power/energy-pkg/": 3.89
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 2.015418051,
+    "system": {
+      "cpu_core/instructions/": 2811040153.0,
+      "power/energy-cores/": 2.11,
+      "power/energy-pkg/": 4.7
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 2.417152926,
+    "system": {
+      "cpu_core/instructions/": 1266515621.0,
+      "power/energy-cores/": 1.32,
+      "power/energy-pkg/": 3.74
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 2.819578775,
+    "system": {
+      "cpu_core/instructions/": 1404954651.0,
+      "power/energy-cores/": 1.22,
+      "power/energy-pkg/": 3.68
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 3.223514161,
+    "system": {
+      "cpu_core/instructions/": 2109406174.0,
+      "power/energy-cores/": 1.91,
+      "power/energy-pkg/": 4.47
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 3.627530477,
+    "system": {
+      "cpu_core/instructions/": 1677378814.0,
+      "power/energy-cores/": 1.91,
+      "power/energy-pkg/": 4.53
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 4.029631685,
+    "system": {
+      "cpu_core/instructions/": 3783904548.0,
+      "power/energy-cores/": 4.62,
+      "power/energy-pkg/": 7.45
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 4.431422072,
+    "system": {
+      "cpu_core/instructions/": 4340871164.0,
+      "power/energy-cores/": 6.19,
+      "power/energy-pkg/": 9.23
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 4.833598012,
+    "system": {
+      "cpu_core/instructions/": 4696796582.0,
+      "power/energy-cores/": 6.74,
+      "power/energy-pkg/": 9.54
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 5.237629238,
+    "system": {
+      "cpu_core/instructions/": 5042768535.0,
+      "power/energy-cores/": 7.12,
+      "power/energy-pkg/": 9.87
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 5.639459224,
+    "system": {
+      "cpu_core/instructions/": 5324217915.0,
+      "power/energy-cores/": 7.44,
+      "power/energy-pkg/": 10.32
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 6.040702523,
+    "system": {
+      "cpu_core/instructions/": 4569459857.0,
+      "power/energy-cores/": 6.49,
+      "power/energy-pkg/": 9.17
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 6.442386281,
+    "system": {
+      "cpu_core/instructions/": 4238873132.0,
+      "power/energy-cores/": 6.15,
+      "power/energy-pkg/": 8.84
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 6.843629253,
+    "system": {
+      "cpu_core/instructions/": 7153517127.0,
+      "power/energy-cores/": 6.08,
+      "power/energy-pkg/": 9.01
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 7.244638924,
+    "system": {
+      "cpu_core/instructions/": 9139153497.0,
+      "power/energy-cores/": 7.09,
+      "power/energy-pkg/": 10.0
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 7.647336415,
+    "system": {
+      "cpu_core/instructions/": 9341758814.0,
+      "power/energy-cores/": 7.76,
+      "power/energy-pkg/": 10.69
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 8.051108117,
+    "system": {
+      "cpu_core/instructions/": 3450717467.0,
+      "power/energy-cores/": 4.1,
+      "power/energy-pkg/": 7.03
+    },
+    "doall": {
+      "cpu_core/instructions/": 2687271.0
+    }
+  },
+  {
+    "timestamp": 8.453649137,
+    "system": {
+      "cpu_core/instructions/": 2913635397.0,
+      "power/energy-cores/": 4.51,
+      "power/energy-pkg/": 7.41
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 8.856047661,
+    "system": {
+      "cpu_core/instructions/": 1526068478.0,
+      "power/energy-cores/": 2.14,
+      "power/energy-pkg/": 4.68
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 9.2582354,
+    "system": {
+      "cpu_core/instructions/": 1561550332.0,
+      "power/energy-cores/": 1.87,
+      "power/energy-pkg/": 4.47
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 9.660408518,
+    "system": {
+      "cpu_core/instructions/": 2080263887.0,
+      "power/energy-cores/": 2.62,
+      "power/energy-pkg/": 5.24
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 10.062604117,
+    "system": {
+      "cpu_core/instructions/": 3274321304.0,
+      "power/energy-cores/": 4.21,
+      "power/energy-pkg/": 7.0
+    },
+    "doall": {
+      "cpu_core/instructions/": 2102745615.0
+    }
+  },
+  {
+    "timestamp": 10.463976099,
+    "system": {
+      "cpu_core/instructions/": 4713920620.0,
+      "power/energy-cores/": 6.52,
+      "power/energy-pkg/": 9.29
+    },
+    "doall": {
+      "cpu_core/instructions/": 2753200014.0
+    }
+  },
+  {
+    "timestamp": 10.865410437,
+    "system": {
+      "cpu_core/instructions/": 4094631953.0,
+      "power/energy-cores/": 5.53,
+      "power/energy-pkg/": 8.23
+    },
+    "doall": {
+      "cpu_core/instructions/": 2845160777.0
+    }
+  },
+  {
+    "timestamp": 11.266982153,
+    "system": {
+      "cpu_core/instructions/": 4083224508.0,
+      "power/energy-cores/": 5.78,
+      "power/energy-pkg/": 8.45
+    },
+    "doall": {
+      "cpu_core/instructions/": 2700375333.0
+    }
+  },
+  {
+    "timestamp": 11.669504918,
+    "system": {
+      "cpu_core/instructions/": 3704395961.0,
+      "power/energy-cores/": 4.95,
+      "power/energy-pkg/": 7.62
+    },
+    "doall": {
+      "cpu_core/instructions/": 2855300145.0
+    }
+  },
+  {
+    "timestamp": 12.070550365,
+    "system": {
+      "cpu_core/instructions/": 6810735983.0,
+      "power/energy-cores/": 6.8,
+      "power/energy-pkg/": 9.57
+    },
+    "doall": {
+      "cpu_core/instructions/": 5392417440.0
+    }
+  },
+  {
+    "timestamp": 12.475492656,
+    "system": {
+      "cpu_core/instructions/": 15314767295.0,
+      "power/energy-cores/": 8.98,
+      "power/energy-pkg/": 12.19
+    },
+    "doall": {
+      "cpu_core/instructions/": 13632000550.0
+    }
+  },
+  {
+    "timestamp": 12.876571036,
+    "system": {
+      "cpu_core/instructions/": 5636028745.0,
+      "power/energy-cores/": 5.93,
+      "power/energy-pkg/": 8.61
+    },
+    "doall": {
+      "cpu_core/instructions/": 2888801278.0
+    }
+  },
+  {
+    "timestamp": 13.277901921,
+    "system": {
+      "cpu_core/instructions/": 2106223524.0,
+      "power/energy-cores/": 2.43,
+      "power/energy-pkg/": 5.06
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 13.682332578,
+    "system": {
+      "cpu_core/instructions/": 1934104670.0,
+      "power/energy-cores/": 2.2,
+      "power/energy-pkg/": 4.83
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 14.083646977,
+    "system": {
+      "cpu_core/instructions/": 1407906022.0,
+      "power/energy-cores/": 1.35,
+      "power/energy-pkg/": 3.85
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 14.486654306,
+    "system": {
+      "cpu_core/instructions/": 1439128593.0,
+      "power/energy-cores/": 1.43,
+      "power/energy-pkg/": 3.95
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 14.888500008,
+    "system": {
+      "cpu_core/instructions/": 2832309278.0,
+      "power/energy-cores/": 4.3,
+      "power/energy-pkg/": 7.04
+    },
+    "doall": {
+      "cpu_core/instructions/": 1136919513.0
+    }
+  },
+  {
+    "timestamp": 15.289884297,
+    "system": {
+      "cpu_core/instructions/": 4160676920.0,
+      "power/energy-cores/": 5.89,
+      "power/energy-pkg/": 8.74
+    },
+    "doall": {
+      "cpu_core/instructions/": 2753732013.0
+    }
+  },
+  {
+    "timestamp": 15.695287618,
+    "system": {
+      "cpu_core/instructions/": 4987919462.0,
+      "power/energy-cores/": 7.17,
+      "power/energy-pkg/": 10.13
+    },
+    "doall": {
+      "cpu_core/instructions/": 2849571423.0
+    }
+  },
+  {
+    "timestamp": 16.098630291,
+    "system": {
+      "cpu_core/instructions/": 5404282412.0,
+      "power/energy-cores/": 8.2,
+      "power/energy-pkg/": 10.99
+    },
+    "doall": {
+      "cpu_core/instructions/": 2715525394.0
+    }
+  },
+  {
+    "timestamp": 16.500121004,
+    "system": {
+      "cpu_core/instructions/": 4103595690.0,
+      "power/energy-cores/": 6.01,
+      "power/energy-pkg/": 8.86
+    },
+    "doall": {
+      "cpu_core/instructions/": 2783856171.0
+    }
+  },
+  {
+    "timestamp": 16.901650218,
+    "system": {
+      "cpu_core/instructions/": 4166246589.0,
+      "power/energy-cores/": 5.99,
+      "power/energy-pkg/": 8.8
+    },
+    "doall": {
+      "cpu_core/instructions/": 2760781095.0
+    }
+  },
+  {
+    "timestamp": 17.303024859,
+    "system": {
+      "cpu_core/instructions/": 18585006104.0,
+      "power/energy-cores/": 9.76,
+      "power/energy-pkg/": 13.01
+    },
+    "doall": {
+      "cpu_core/instructions/": 17126841824.0
+    }
+  },
+  {
+    "timestamp": 17.704382404,
+    "system": {
+      "cpu_core/instructions/": 7075735718.0,
+      "power/energy-cores/": 7.7,
+      "power/energy-pkg/": 10.53
+    },
+    "doall": {
+      "cpu_core/instructions/": 3094559038.0
+    }
+  },
+  {
+    "timestamp": 18.105856705,
+    "system": {
+      "cpu_core/instructions/": 3004158613.0,
+      "power/energy-cores/": 4.43,
+      "power/energy-pkg/": 7.21
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 18.507442677,
+    "system": {
+      "cpu_core/instructions/": 1249085348.0,
+      "power/energy-cores/": 1.5,
+      "power/energy-pkg/": 4.14
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 18.909696743,
+    "system": {
+      "cpu_core/instructions/": 1708639070.0,
+      "power/energy-cores/": 3.08,
+      "power/energy-pkg/": 5.91
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 19.311067458,
+    "system": {
+      "cpu_core/instructions/": 2934573508.0,
+      "power/energy-cores/": 5.43,
+      "power/energy-pkg/": 8.39
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 19.712507405,
+    "system": {
+      "cpu_core/instructions/": 2375585862.0,
+      "power/energy-cores/": 3.25,
+      "power/energy-pkg/": 5.89
+    },
+    "doall": {
+      "cpu_core/instructions/": 852448903.0
+    }
+  },
+  {
+    "timestamp": 20.114472415,
+    "system": {
+      "cpu_core/instructions/": 3878827176.0,
+      "power/energy-cores/": 5.11,
+      "power/energy-pkg/": 7.91
+    },
+    "doall": {
+      "cpu_core/instructions/": 2902011066.0
+    }
+  },
+  {
+    "timestamp": 20.515639626,
+    "system": {
+      "cpu_core/instructions/": 4624810222.0,
+      "power/energy-cores/": 6.51,
+      "power/energy-pkg/": 9.37
+    },
+    "doall": {
+      "cpu_core/instructions/": 2687337793.0
+    }
+  },
+  {
+    "timestamp": 20.91829486,
+    "system": {
+      "cpu_core/instructions/": 4990519674.0,
+      "power/energy-cores/": 7.01,
+      "power/energy-pkg/": 9.9
+    },
+    "doall": {
+      "cpu_core/instructions/": 2599670290.0
+    }
+  },
+  {
+    "timestamp": 21.319627285,
+    "system": {
+      "cpu_core/instructions/": 3773390058.0,
+      "power/energy-cores/": 5.37,
+      "power/energy-pkg/": 8.23
+    },
+    "doall": {
+      "cpu_core/instructions/": 2875873068.0
+    }
+  },
+  {
+    "timestamp": 21.720641971,
+    "system": {
+      "cpu_core/instructions/": 3644139689.0,
+      "power/energy-cores/": 4.9,
+      "power/energy-pkg/": 7.62
+    },
+    "doall": {
+      "cpu_core/instructions/": 2844468416.0
+    }
+  },
+  {
+    "timestamp": 22.122210647,
+    "system": {
+      "cpu_core/instructions/": 17520973788.0,
+      "power/energy-cores/": 9.11,
+      "power/energy-pkg/": 12.39
+    },
+    "doall": {
+      "cpu_core/instructions/": 16727087707.0
+    }
+  },
+  {
+    "timestamp": 22.525164064,
+    "system": {
+      "cpu_core/instructions/": 5284548906.0,
+      "power/energy-cores/": 5.62,
+      "power/energy-pkg/": 8.3
+    },
+    "doall": {
+      "cpu_core/instructions/": 2811697585.0
+    }
+  },
+  {
+    "timestamp": 22.926533691,
+    "system": {
+      "cpu_core/instructions/": 1867958034.0,
+      "power/energy-cores/": 2.71,
+      "power/energy-pkg/": 5.36
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 23.328093759,
+    "system": {
+      "cpu_core/instructions/": 1693929556.0,
+      "power/energy-cores/": 2.24,
+      "power/energy-pkg/": 4.84
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 23.730422957,
+    "system": {
+      "cpu_core/instructions/": 2150622111.0,
+      "power/energy-cores/": 2.65,
+      "power/energy-pkg/": 5.25
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 24.13396142,
+    "system": {
+      "cpu_core/instructions/": 1303161682.0,
+      "power/energy-cores/": 1.36,
+      "power/energy-pkg/": 3.94
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 24.536308492,
+    "system": {
+      "cpu_core/instructions/": 1367454181.0,
+      "power/energy-cores/": 1.42,
+      "power/energy-pkg/": 4.07
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 24.939735455,
+    "system": {
+      "cpu_core/instructions/": 994552647.0,
+      "power/energy-cores/": 1.17,
+      "power/energy-pkg/": 3.72
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 25.343681521,
+    "system": {
+      "cpu_core/instructions/": 1330942086.0,
+      "power/energy-cores/": 1.72,
+      "power/energy-pkg/": 4.38
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 25.745246864,
+    "system": {
+      "cpu_core/instructions/": 2456416722.0,
+      "power/energy-cores/": 3.63,
+      "power/energy-pkg/": 6.51
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 26.147662822,
+    "system": {
+      "cpu_core/instructions/": 2354240031.0,
+      "power/energy-cores/": 3.6,
+      "power/energy-pkg/": 6.36
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 26.549516611,
+    "system": {
+      "cpu_core/instructions/": 3696363961.0,
+      "power/energy-cores/": 5.72,
+      "power/energy-pkg/": 8.48
+    },
+    "doall": {
+      "cpu_core/instructions/": 1323063853.0
+    }
+  },
+  {
+    "timestamp": 26.952387726,
+    "system": {
+      "cpu_core/instructions/": 4193369517.0,
+      "power/energy-cores/": 7.3,
+      "power/energy-pkg/": 10.29
+    },
+    "doall": {
+      "cpu_core/instructions/": 1595932159.0
+    }
+  },
+  {
+    "timestamp": 27.353588147,
+    "system": {
+      "cpu_core/instructions/": 2748340813.0,
+      "power/energy-cores/": 5.13,
+      "power/energy-pkg/": 7.83
+    },
+    "doall": {
+      "cpu_core/instructions/": 1867405401.0
+    }
+  },
+  {
+    "timestamp": 27.755056485,
+    "system": {
+      "cpu_core/instructions/": 3665273530.0,
+      "power/energy-cores/": 6.69,
+      "power/energy-pkg/": 9.47
+    },
+    "doall": {
+      "cpu_core/instructions/": 1750932258.0
+    }
+  },
+  {
+    "timestamp": 28.156751649,
+    "system": {
+      "cpu_core/instructions/": 3337635721.0,
+      "power/energy-cores/": 5.79,
+      "power/energy-pkg/": 8.65
+    },
+    "doall": {
+      "cpu_core/instructions/": 1871085169.0
+    }
+  },
+  {
+    "timestamp": 28.558207403,
+    "system": {
+      "cpu_core/instructions/": 3110841730.0,
+      "power/energy-cores/": 5.67,
+      "power/energy-pkg/": 8.38
+    },
+    "doall": {
+      "cpu_core/instructions/": 1794782700.0
+    }
+  },
+  {
+    "timestamp": 28.959648654,
+    "system": {
+      "cpu_core/instructions/": 6285288583.0,
+      "power/energy-cores/": 5.61,
+      "power/energy-pkg/": 8.5
+    },
+    "doall": {
+      "cpu_core/instructions/": 5521431000.0
+    }
+  },
+  {
+    "timestamp": 29.360738544,
+    "system": {
+      "cpu_core/instructions/": 7908701914.0,
+      "power/energy-cores/": 5.7,
+      "power/energy-pkg/": 8.69
+    },
+    "doall": {
+      "cpu_core/instructions/": 7223982487.0
+    }
+  },
+  {
+    "timestamp": 29.762280866,
+    "system": {
+      "cpu_core/instructions/": 5795852234.0,
+      "power/energy-cores/": 5.1,
+      "power/energy-pkg/": 7.8
+    },
+    "doall": {
+      "cpu_core/instructions/": 4048459613.0
+    }
+  },
+  {
+    "timestamp": 30.164667987,
+    "system": {
+      "cpu_core/instructions/": 1421087314.0,
+      "power/energy-cores/": 1.79,
+      "power/energy-pkg/": 4.33
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 30.566659448,
+    "system": {
+      "cpu_core/instructions/": 2092211522.0,
+      "power/energy-cores/": 3.28,
+      "power/energy-pkg/": 6.08
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 30.969657897,
+    "system": {
+      "cpu_core/instructions/": 1839101059.0,
+      "power/energy-cores/": 2.4,
+      "power/energy-pkg/": 5.15
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 31.371553684,
+    "system": {
+      "cpu_core/instructions/": 1806297069.0,
+      "power/energy-cores/": 2.55,
+      "power/energy-pkg/": 5.19
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 31.77463352,
+    "system": {
+      "cpu_core/instructions/": 1460739315.0,
+      "power/energy-cores/": 2.11,
+      "power/energy-pkg/": 4.66
+    },
+    "doall": {
+      "cpu_core/instructions/": 473996572.0
+    }
+  },
+  {
+    "timestamp": 32.176020657,
+    "system": {
+      "cpu_core/instructions/": 3399159444.0,
+      "power/energy-cores/": 5.69,
+      "power/energy-pkg/": 8.42
+    },
+    "doall": {
+      "cpu_core/instructions/": 1854672240.0
+    }
+  },
+  {
+    "timestamp": 32.577486967,
+    "system": {
+      "cpu_core/instructions/": 2990438338.0,
+      "power/energy-cores/": 5.41,
+      "power/energy-pkg/": 8.13
+    },
+    "doall": {
+      "cpu_core/instructions/": 1856407994.0
+    }
+  },
+  {
+    "timestamp": 32.979509946,
+    "system": {
+      "cpu_core/instructions/": 3346709687.0,
+      "power/energy-cores/": 6.38,
+      "power/energy-pkg/": 9.19
+    },
+    "doall": {
+      "cpu_core/instructions/": 1738689189.0
+    }
+  },
+  {
+    "timestamp": 33.38142321,
+    "system": {
+      "cpu_core/instructions/": 3540228280.0,
+      "power/energy-cores/": 6.58,
+      "power/energy-pkg/": 9.37
+    },
+    "doall": {
+      "cpu_core/instructions/": 1750515547.0
+    }
+  },
+  {
+    "timestamp": 33.783393375,
+    "system": {
+      "cpu_core/instructions/": 5146346945.0,
+      "power/energy-cores/": 6.25,
+      "power/energy-pkg/": 9.24
+    },
+    "doall": {
+      "cpu_core/instructions/": 4094609715.0
+    }
+  },
+  {
+    "timestamp": 34.185386908,
+    "system": {
+      "cpu_core/instructions/": 13126800786.0,
+      "power/energy-cores/": 9.01,
+      "power/energy-pkg/": 12.13
+    },
+    "doall": {
+      "cpu_core/instructions/": 10843243920.0
+    }
+  },
+  {
+    "timestamp": 34.589253852,
+    "system": {
+      "cpu_core/instructions/": 4908814828.0,
+      "power/energy-cores/": 5.21,
+      "power/energy-pkg/": 8.04
+    },
+    "doall": {
+      "cpu_core/instructions/": 2673228459.0
+    }
+  },
+  {
+    "timestamp": 34.99235498,
+    "system": {
+      "cpu_core/instructions/": 2083143323.0,
+      "power/energy-cores/": 2.73,
+      "power/energy-pkg/": 5.43
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 35.396408603,
+    "system": {
+      "cpu_core/instructions/": 1455955857.0,
+      "power/energy-cores/": 1.53,
+      "power/energy-pkg/": 4.07
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 35.798659521,
+    "system": {
+      "cpu_core/instructions/": 1078620310.0,
+      "power/energy-cores/": 1.24,
+      "power/energy-pkg/": 3.84
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 36.201326328,
+    "system": {
+      "cpu_core/instructions/": 3156197993.0,
+      "power/energy-cores/": 4.59,
+      "power/energy-pkg/": 7.2
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 36.602446249,
+    "system": {
+      "cpu_core/instructions/": 4915021501.0,
+      "power/energy-cores/": 7.6,
+      "power/energy-pkg/": 10.52
+    },
+    "doall": {
+      "cpu_core/instructions/": 877502457.0
+    }
+  },
+  {
+    "timestamp": 37.004534766,
+    "system": {
+      "cpu_core/instructions/": 4597284324.0,
+      "power/energy-cores/": 7.22,
+      "power/energy-pkg/": 10.19
+    },
+    "doall": {
+      "cpu_core/instructions/": 1567059784.0
+    }
+  },
+  {
+    "timestamp": 37.405781252,
+    "system": {
+      "cpu_core/instructions/": 3822970590.0,
+      "power/energy-cores/": 6.71,
+      "power/energy-pkg/": 9.58
+    },
+    "doall": {
+      "cpu_core/instructions/": 1714191513.0
+    }
+  },
+  {
+    "timestamp": 37.807700895,
+    "system": {
+      "cpu_core/instructions/": 4055274375.0,
+      "power/energy-cores/": 6.9,
+      "power/energy-pkg/": 9.83
+    },
+    "doall": {
+      "cpu_core/instructions/": 1569825422.0
+    }
+  },
+  {
+    "timestamp": 38.209058404,
+    "system": {
+      "cpu_core/instructions/": 3845122387.0,
+      "power/energy-cores/": 6.55,
+      "power/energy-pkg/": 9.62
+    },
+    "doall": {
+      "cpu_core/instructions/": 1676840200.0
+    }
+  },
+  {
+    "timestamp": 38.610658252,
+    "system": {
+      "cpu_core/instructions/": 4404911974.0,
+      "power/energy-cores/": 7.02,
+      "power/energy-pkg/": 10.14
+    },
+    "doall": {
+      "cpu_core/instructions/": 2251847383.0
+    }
+  },
+  {
+    "timestamp": 39.012390068,
+    "system": {
+      "cpu_core/instructions/": 15304550895.0,
+      "power/energy-cores/": 9.92,
+      "power/energy-pkg/": 13.26
+    },
+    "doall": {
+      "cpu_core/instructions/": 13986202965.0
+    }
+  },
+  {
+    "timestamp": 39.413662254,
+    "system": {
+      "cpu_core/instructions/": 2929137220.0,
+      "power/energy-cores/": 2.88,
+      "power/energy-pkg/": 5.45
+    },
+    "doall": {
+      "cpu_core/instructions/": 1538298894.0
+    }
+  },
+  {
+    "timestamp": 39.816243345,
+    "system": {
+      "cpu_core/instructions/": 960391912.0,
+      "power/energy-cores/": 1.1,
+      "power/energy-pkg/": 3.66
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 40.218689061,
+    "system": {
+      "cpu_core/instructions/": 1381058802.0,
+      "power/energy-cores/": 1.91,
+      "power/energy-pkg/": 4.65
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 40.621229601,
+    "system": {
+      "cpu_core/instructions/": 1231770359.0,
+      "power/energy-cores/": 1.05,
+      "power/energy-pkg/": 3.68
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 41.024649406,
+    "system": {
+      "cpu_core/instructions/": 2173661141.0,
+      "power/energy-cores/": 2.99,
+      "power/energy-pkg/": 5.69
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 41.427017486,
+    "system": {
+      "cpu_core/instructions/": 2473895630.0,
+      "power/energy-cores/": 4.31,
+      "power/energy-pkg/": 7.17
+    },
+    "doall": {
+      "cpu_core/instructions/": 1249611629.0
+    }
+  },
+  {
+    "timestamp": 41.828600944,
+    "system": {
+      "cpu_core/instructions/": 2786482829.0,
+      "power/energy-cores/": 5.22,
+      "power/energy-pkg/": 8.02
+    },
+    "doall": {
+      "cpu_core/instructions/": 1868783764.0
+    }
+  },
+  {
+    "timestamp": 42.230117994,
+    "system": {
+      "cpu_core/instructions/": 2712962086.0,
+      "power/energy-cores/": 5.16,
+      "power/energy-pkg/": 7.87
+    },
+    "doall": {
+      "cpu_core/instructions/": 1845032254.0
+    }
+  },
+  {
+    "timestamp": 42.632353286,
+    "system": {
+      "cpu_core/instructions/": 3779335432.0,
+      "power/energy-cores/": 6.45,
+      "power/energy-pkg/": 9.26
+    },
+    "doall": {
+      "cpu_core/instructions/": 1761096459.0
+    }
+  },
+  {
+    "timestamp": 43.034430537,
+    "system": {
+      "cpu_core/instructions/": 3656255497.0,
+      "power/energy-cores/": 6.2,
+      "power/energy-pkg/": 9.02
+    },
+    "doall": {
+      "cpu_core/instructions/": 1730811190.0
+    }
+  },
+  {
+    "timestamp": 43.435672702,
+    "system": {
+      "cpu_core/instructions/": 13036143287.0,
+      "power/energy-cores/": 8.69,
+      "power/energy-pkg/": 11.99
+    },
+    "doall": {
+      "cpu_core/instructions/": 12084488918.0
+    }
+  },
+  {
+    "timestamp": 43.839489792,
+    "system": {
+      "cpu_core/instructions/": 5741834787.0,
+      "power/energy-cores/": 4.91,
+      "power/energy-pkg/": 7.75
+    },
+    "doall": {
+      "cpu_core/instructions/": 3827785889.0
+    }
+  },
+  {
+    "timestamp": 44.241636204,
+    "system": {
+      "cpu_core/instructions/": 1643345105.0,
+      "power/energy-cores/": 1.88,
+      "power/energy-pkg/": 4.48
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 44.646542048,
+    "system": {
+      "cpu_core/instructions/": 4785330223.0,
+      "power/energy-cores/": 6.27,
+      "power/energy-pkg/": 9.37
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 45.047832297,
+    "system": {
+      "cpu_core/instructions/": 5115219893.0,
+      "power/energy-cores/": 7.28,
+      "power/energy-pkg/": 10.08
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 45.449195528,
+    "system": {
+      "cpu_core/instructions/": 4268491722.0,
+      "power/energy-cores/": 6.22,
+      "power/energy-pkg/": 8.94
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 45.851155375,
+    "system": {
+      "cpu_core/instructions/": 2116580623.0,
+      "power/energy-cores/": 2.66,
+      "power/energy-pkg/": 5.42
+    },
+    "doall": {
+      "cpu_core/instructions/": 3111661.0
+    }
+  },
+  {
+    "timestamp": 46.252749178,
+    "system": {
+      "cpu_core/instructions/": 1392748211.0,
+      "power/energy-cores/": 1.85,
+      "power/energy-pkg/": 4.54
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 46.655107668,
+    "system": {
+      "cpu_core/instructions/": 1433454896.0,
+      "power/energy-cores/": 1.78,
+      "power/energy-pkg/": 4.44
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 47.058448641,
+    "system": {
+      "cpu_core/instructions/": 2293285636.0,
+      "power/energy-cores/": 3.15,
+      "power/energy-pkg/": 5.88
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 47.461155696,
+    "system": {
+      "cpu_core/instructions/": 2009932532.0,
+      "power/energy-cores/": 2.34,
+      "power/energy-pkg/": 5.03
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 47.864317149,
+    "system": {
+      "cpu_core/instructions/": 2839929921.0,
+      "power/energy-cores/": 3.87,
+      "power/energy-pkg/": 6.6
+    },
+    "doall": {
+      "cpu_core/instructions/": 1045241031.0
+    }
+  },
+  {
+    "timestamp": 48.268408444,
+    "system": {
+      "cpu_core/instructions/": 3038238647.0,
+      "power/energy-cores/": 4.71,
+      "power/energy-pkg/": 7.58
+    },
+    "doall": {
+      "cpu_core/instructions/": 1823672794.0
+    }
+  },
+  {
+    "timestamp": 48.672502492,
+    "system": {
+      "cpu_core/instructions/": 2936743534.0,
+      "power/energy-cores/": 5.4,
+      "power/energy-pkg/": 8.19
+    },
+    "doall": {
+      "cpu_core/instructions/": 1830664436.0
+    }
+  },
+  {
+    "timestamp": 49.075503511,
+    "system": {
+      "cpu_core/instructions/": 3216831633.0,
+      "power/energy-cores/": 5.98,
+      "power/energy-pkg/": 8.82
+    },
+    "doall": {
+      "cpu_core/instructions/": 1825223017.0
+    }
+  },
+  {
+    "timestamp": 49.476723054,
+    "system": {
+      "cpu_core/instructions/": 3032563070.0,
+      "power/energy-cores/": 5.52,
+      "power/energy-pkg/": 8.26
+    },
+    "doall": {
+      "cpu_core/instructions/": 1824102154.0
+    }
+  },
+  {
+    "timestamp": 49.877659678,
+    "system": {
+      "cpu_core/instructions/": 4347081272.0,
+      "power/energy-cores/": 5.91,
+      "power/energy-pkg/": 8.74
+    },
+    "doall": {
+      "cpu_core/instructions/": 1849137003.0
+    }
+  },
+  {
+    "timestamp": 50.282230294,
+    "system": {
+      "cpu_core/instructions/": 4624243236.0,
+      "power/energy-cores/": 6.83,
+      "power/energy-pkg/": 9.97
+    },
+    "doall": {
+      "cpu_core/instructions/": 2352334608.0
+    }
+  },
+  {
+    "timestamp": 50.683665483,
+    "system": {
+      "cpu_core/instructions/": 6312603750.0,
+      "power/energy-cores/": 7.38,
+      "power/energy-pkg/": 10.68
+    },
+    "doall": {
+      "cpu_core/instructions/": 3156048144.0
+    }
+  },
+  {
+    "timestamp": 51.085205671,
+    "system": {
+      "cpu_core/instructions/": 3478362810.0,
+      "power/energy-cores/": 3.86,
+      "power/energy-pkg/": 6.63
+    },
+    "doall": {
+      "cpu_core/instructions/": 1356913707.0
+    }
+  },
+  {
+    "timestamp": 51.487419038,
+    "system": {
+      "cpu_core/instructions/": 3676025196.0,
+      "power/energy-cores/": 4.85,
+      "power/energy-pkg/": 7.85
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 51.888466315,
+    "system": {
+      "cpu_core/instructions/": 3176550026.0,
+      "power/energy-cores/": 5.21,
+      "power/energy-pkg/": 7.99
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 52.289678038,
+    "system": {
+      "cpu_core/instructions/": 1181104880.0,
+      "power/energy-cores/": 1.48,
+      "power/energy-pkg/": 4.09
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 52.691673531,
+    "system": {
+      "cpu_core/instructions/": 892467755.0,
+      "power/energy-cores/": 0.94,
+      "power/energy-pkg/": 3.32
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 53.093616661,
+    "system": {
+      "cpu_core/instructions/": 2436545717.0,
+      "power/energy-cores/": 3.93,
+      "power/energy-pkg/": 6.67
+    },
+    "doall": {
+      "cpu_core/instructions/": 1270058621.0
+    }
+  },
+  {
+    "timestamp": 53.49465577,
+    "system": {
+      "cpu_core/instructions/": 3979627452.0,
+      "power/energy-cores/": 6.89,
+      "power/energy-pkg/": 9.76
+    },
+    "doall": {
+      "cpu_core/instructions/": 1747185755.0
+    }
+  },
+  {
+    "timestamp": 53.89563241,
+    "system": {
+      "cpu_core/instructions/": 2821369089.0,
+      "power/energy-cores/": 5.33,
+      "power/energy-pkg/": 8.23
+    },
+    "doall": {
+      "cpu_core/instructions/": 1802926989.0
+    }
+  },
+  {
+    "timestamp": 54.298527698,
+    "system": {
+      "cpu_core/instructions/": 2705621863.0,
+      "power/energy-cores/": 5.1,
+      "power/energy-pkg/": 7.94
+    },
+    "doall": {
+      "cpu_core/instructions/": 1861848639.0
+    }
+  },
+  {
+    "timestamp": 54.702557013,
+    "system": {
+      "cpu_core/instructions/": 2604295449.0,
+      "power/energy-cores/": 4.82,
+      "power/energy-pkg/": 7.55
+    },
+    "doall": {
+      "cpu_core/instructions/": 1853622758.0
+    }
+  },
+  {
+    "timestamp": 55.104526896,
+    "system": {
+      "cpu_core/instructions/": 4196540360.0,
+      "power/energy-cores/": 6.62,
+      "power/energy-pkg/": 9.9
+    },
+    "doall": {
+      "cpu_core/instructions/": 3379359279.0
+    }
+  },
+  {
+    "timestamp": 55.506380676,
+    "system": {
+      "cpu_core/instructions/": 5174292592.0,
+      "power/energy-cores/": 4.78,
+      "power/energy-pkg/": 7.57
+    },
+    "doall": {
+      "cpu_core/instructions/": 3508554090.0
+    }
+  },
+  {
+    "timestamp": 55.910493659,
+    "system": {
+      "cpu_core/instructions/": 1385257187.0,
+      "power/energy-cores/": 1.64,
+      "power/energy-pkg/": 4.13
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 56.312488941,
+    "system": {
+      "cpu_core/instructions/": 988220469.0,
+      "power/energy-cores/": 1.12,
+      "power/energy-pkg/": 3.56
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 56.71476333,
+    "system": {
+      "cpu_core/instructions/": 860805346.0,
+      "power/energy-cores/": 0.95,
+      "power/energy-pkg/": 3.44
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 57.1171233,
+    "system": {
+      "cpu_core/instructions/": 898858410.0,
+      "power/energy-cores/": 0.93,
+      "power/energy-pkg/": 3.47
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 57.519193194,
+    "system": {
+      "cpu_core/instructions/": 1725775138.0,
+      "power/energy-cores/": 2.77,
+      "power/energy-pkg/": 5.41
+    },
+    "doall": {
+      "cpu_core/instructions/": 622116938.0
+    }
+  },
+  {
+    "timestamp": 57.920357802,
+    "system": {
+      "cpu_core/instructions/": 2960480037.0,
+      "power/energy-cores/": 5.11,
+      "power/energy-pkg/": 7.81
+    },
+    "doall": {
+      "cpu_core/instructions/": 1830383391.0
+    }
+  },
+  {
+    "timestamp": 58.32274095,
+    "system": {
+      "cpu_core/instructions/": 2692351912.0,
+      "power/energy-cores/": 4.89,
+      "power/energy-pkg/": 7.58
+    },
+    "doall": {
+      "cpu_core/instructions/": 1900196393.0
+    }
+  },
+  {
+    "timestamp": 58.724341258,
+    "system": {
+      "cpu_core/instructions/": 2633953735.0,
+      "power/energy-cores/": 4.85,
+      "power/energy-pkg/": 7.5
+    },
+    "doall": {
+      "cpu_core/instructions/": 1881860036.0
+    }
+  },
+  {
+    "timestamp": 59.12559876,
+    "system": {
+      "cpu_core/instructions/": 2646030442.0,
+      "power/energy-cores/": 4.81,
+      "power/energy-pkg/": 7.44
+    },
+    "doall": {
+      "cpu_core/instructions/": 1891499949.0
+    }
+  },
+  {
+    "timestamp": 59.527081149,
+    "system": {
+      "cpu_core/instructions/": 4000267445.0,
+      "power/energy-cores/": 6.73,
+      "power/energy-pkg/": 9.82
+    },
+    "doall": {
+      "cpu_core/instructions/": 3141391567.0
+    }
+  },
+  {
+    "timestamp": 59.928254192,
+    "system": {
+      "cpu_core/instructions/": 5750945002.0,
+      "power/energy-cores/": 5.66,
+      "power/energy-pkg/": 8.37
+    },
+    "doall": {
+      "cpu_core/instructions/": 4120548901.0
+    }
+  },
+  {
+    "timestamp": 60.330457067,
+    "system": {
+      "cpu_core/instructions/": 959539212.0,
+      "power/energy-cores/": 1.02,
+      "power/energy-pkg/": 3.37
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 60.731652178,
+    "system": {
+      "cpu_core/instructions/": 1113604292.0,
+      "power/energy-cores/": 1.26,
+      "power/energy-pkg/": 3.79
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 61.133159627,
+    "system": {
+      "cpu_core/instructions/": 759620470.0,
+      "power/energy-cores/": 0.93,
+      "power/energy-pkg/": 3.25
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 61.535359866,
+    "system": {
+      "cpu_core/instructions/": 780563972.0,
+      "power/energy-cores/": 0.76,
+      "power/energy-pkg/": 2.98
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 61.937525287,
+    "system": {
+      "cpu_core/instructions/": 1106253680.0,
+      "power/energy-cores/": 1.57,
+      "power/energy-pkg/": 4.08
+    },
+    "doall": {
+      "cpu_core/instructions/": 334125381.0
+    }
+  },
+  {
+    "timestamp": 62.338630435,
+    "system": {
+      "cpu_core/instructions/": 2673526280.0,
+      "power/energy-cores/": 4.83,
+      "power/energy-pkg/": 7.51
+    },
+    "doall": {
+      "cpu_core/instructions/": 1896915158.0
+    }
+  },
+  {
+    "timestamp": 62.739632551,
+    "system": {
+      "cpu_core/instructions/": 2850135815.0,
+      "power/energy-cores/": 5.18,
+      "power/energy-pkg/": 7.85
+    },
+    "doall": {
+      "cpu_core/instructions/": 1839141856.0
+    }
+  },
+  {
+    "timestamp": 63.140740812,
+    "system": {
+      "cpu_core/instructions/": 2745438128.0,
+      "power/energy-cores/": 4.94,
+      "power/energy-pkg/": 7.59
+    },
+    "doall": {
+      "cpu_core/instructions/": 1867451027.0
+    }
+  },
+  {
+    "timestamp": 63.545343263,
+    "system": {
+      "cpu_core/instructions/": 2773226116.0,
+      "power/energy-cores/": 5.01,
+      "power/energy-pkg/": 7.7
+    },
+    "doall": {
+      "cpu_core/instructions/": 1890549703.0
+    }
+  },
+  {
+    "timestamp": 63.9466447,
+    "system": {
+      "cpu_core/instructions/": 3941404090.0,
+      "power/energy-cores/": 6.75,
+      "power/energy-pkg/": 9.94
+    },
+    "doall": {
+      "cpu_core/instructions/": 2753637473.0
+    }
+  },
+  {
+    "timestamp": 64.34756789,
+    "system": {
+      "cpu_core/instructions/": 6606466529.0,
+      "power/energy-cores/": 7.09,
+      "power/energy-pkg/": 10.11
+    },
+    "doall": {
+      "cpu_core/instructions/": 4749570692.0
+    }
+  },
+  {
+    "timestamp": 64.750041246,
+    "system": {
+      "cpu_core/instructions/": 902604243.0,
+      "power/energy-cores/": 0.94,
+      "power/energy-pkg/": 3.32
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 65.152513257,
+    "system": {
+      "cpu_core/instructions/": 1241264520.0,
+      "power/energy-cores/": 1.28,
+      "power/energy-pkg/": 3.75
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 65.554810216,
+    "system": {
+      "cpu_core/instructions/": 1061486121.0,
+      "power/energy-cores/": 1.05,
+      "power/energy-pkg/": 3.4
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 65.957600783,
+    "system": {
+      "cpu_core/instructions/": 1060959744.0,
+      "power/energy-cores/": 1.0,
+      "power/energy-pkg/": 3.35
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 66.359844374,
+    "system": {
+      "cpu_core/instructions/": 980219415.0,
+      "power/energy-cores/": 0.92,
+      "power/energy-pkg/": 3.27
+    },
+    "doall": {
+      "cpu_core/instructions/": 792407.0
+    }
+  },
+  {
+    "timestamp": 66.762821337,
+    "system": {
+      "cpu_core/instructions/": 950573160.0,
+      "power/energy-cores/": 0.9,
+      "power/energy-pkg/": 3.35
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 67.164878298,
+    "system": {
+      "cpu_core/instructions/": 778791124.0,
+      "power/energy-cores/": 0.86,
+      "power/energy-pkg/": 3.19
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 67.567368587,
+    "system": {
+      "cpu_core/instructions/": 1011304899.0,
+      "power/energy-cores/": 1.01,
+      "power/energy-pkg/": 3.37
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 67.969461731,
+    "system": {
+      "cpu_core/instructions/": 958777445.0,
+      "power/energy-cores/": 0.91,
+      "power/energy-pkg/": 3.14
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 68.37194836,
+    "system": {
+      "cpu_core/instructions/": 1883620636.0,
+      "power/energy-cores/": 1.92,
+      "power/energy-pkg/": 4.24
+    },
+    "doall": {
+      "cpu_core/instructions/": 429521568.0
+    }
+  },
+  {
+    "timestamp": 68.774300971,
+    "system": {
+      "cpu_core/instructions/": 3185367654.0,
+      "power/energy-cores/": 5.38,
+      "power/energy-pkg/": 8.22
+    },
+    "doall": {
+      "cpu_core/instructions/": 2006572182.0
+    }
+  },
+  {
+    "timestamp": 69.175649402,
+    "system": {
+      "cpu_core/instructions/": 2839712309.0,
+      "power/energy-cores/": 4.79,
+      "power/energy-pkg/": 7.47
+    },
+    "doall": {
+      "cpu_core/instructions/": 1895559177.0
+    }
+  },
+  {
+    "timestamp": 69.578327311,
+    "system": {
+      "cpu_core/instructions/": 2789915172.0,
+      "power/energy-cores/": 4.82,
+      "power/energy-pkg/": 7.5
+    },
+    "doall": {
+      "cpu_core/instructions/": 1871854897.0
+    }
+  },
+  {
+    "timestamp": 69.979437906,
+    "system": {
+      "cpu_core/instructions/": 2808165182.0,
+      "power/energy-cores/": 4.81,
+      "power/energy-pkg/": 7.49
+    },
+    "doall": {
+      "cpu_core/instructions/": 1888649949.0
+    }
+  },
+  {
+    "timestamp": 70.380863989,
+    "system": {
+      "cpu_core/instructions/": 2817653315.0,
+      "power/energy-cores/": 5.1,
+      "power/energy-pkg/": 7.77
+    },
+    "doall": {
+      "cpu_core/instructions/": 1869946678.0
+    }
+  },
+  {
+    "timestamp": 70.782187178,
+    "system": {
+      "cpu_core/instructions/": 3381583458.0,
+      "power/energy-cores/": 5.49,
+      "power/energy-pkg/": 8.44
+    },
+    "doall": {
+      "cpu_core/instructions/": 2306878335.0
+    }
+  },
+  {
+    "timestamp": 71.183652246,
+    "system": {
+      "cpu_core/instructions/": 4961399454.0,
+      "power/energy-cores/": 5.78,
+      "power/energy-pkg/": 8.73
+    },
+    "doall": {
+      "cpu_core/instructions/": 3639496044.0
+    }
+  },
+  {
+    "timestamp": 71.585155548,
+    "system": {
+      "cpu_core/instructions/": 1980702675.0,
+      "power/energy-cores/": 1.75,
+      "power/energy-pkg/": 4.01
+    },
+    "doall": {
+      "cpu_core/instructions/": 1144872170.0
+    }
+  },
+  {
+    "timestamp": 71.987640425,
+    "system": {
+      "cpu_core/instructions/": 1074669395.0,
+      "power/energy-cores/": 1.13,
+      "power/energy-pkg/": 3.68
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 72.389975588,
+    "system": {
+      "cpu_core/instructions/": 1107385193.0,
+      "power/energy-cores/": 1.11,
+      "power/energy-pkg/": 3.51
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 72.791804887,
+    "system": {
+      "cpu_core/instructions/": 964500491.0,
+      "power/energy-cores/": 0.96,
+      "power/energy-pkg/": 3.27
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 73.194348652,
+    "system": {
+      "cpu_core/instructions/": 781253864.0,
+      "power/energy-cores/": 0.76,
+      "power/energy-pkg/": 3.06
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 73.596721861,
+    "system": {
+      "cpu_core/instructions/": 2213200941.0,
+      "power/energy-cores/": 3.79,
+      "power/energy-pkg/": 6.4
+    },
+    "doall": {
+      "cpu_core/instructions/": 1435230830.0
+    }
+  },
+  {
+    "timestamp": 73.998186608,
+    "system": {
+      "cpu_core/instructions/": 2685874476.0,
+      "power/energy-cores/": 5.17,
+      "power/energy-pkg/": 7.85
+    },
+    "doall": {
+      "cpu_core/instructions/": 1860007581.0
+    }
+  },
+  {
+    "timestamp": 74.403275836,
+    "system": {
+      "cpu_core/instructions/": 2851522317.0,
+      "power/energy-cores/": 5.26,
+      "power/energy-pkg/": 8.07
+    },
+    "doall": {
+      "cpu_core/instructions/": 1848049951.0
+    }
+  },
+  {
+    "timestamp": 74.805644844,
+    "system": {
+      "cpu_core/instructions/": 2735204221.0,
+      "power/energy-cores/": 4.8,
+      "power/energy-pkg/": 7.49
+    },
+    "doall": {
+      "cpu_core/instructions/": 1891823398.0
+    }
+  },
+  {
+    "timestamp": 75.21035881,
+    "system": {
+      "cpu_core/instructions/": 2716448849.0,
+      "power/energy-cores/": 5.02,
+      "power/energy-pkg/": 7.73
+    },
+    "doall": {
+      "cpu_core/instructions/": 1890526009.0
+    }
+  },
+  {
+    "timestamp": 75.61332554,
+    "system": {
+      "cpu_core/instructions/": 5407295033.0,
+      "power/energy-cores/": 6.42,
+      "power/energy-pkg/": 9.77
+    },
+    "doall": {
+      "cpu_core/instructions/": 4002098996.0
+    }
+  },
+  {
+    "timestamp": 76.014719218,
+    "system": {
+      "cpu_core/instructions/": 3349319812.0,
+      "power/energy-cores/": 3.01,
+      "power/energy-pkg/": 5.45
+    },
+    "doall": {
+      "cpu_core/instructions/": 2463262438.0
+    }
+  },
+  {
+    "timestamp": 76.416839482,
+    "system": {
+      "cpu_core/instructions/": 1189107797.0,
+      "power/energy-cores/": 1.08,
+      "power/energy-pkg/": 3.54
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 76.818930985,
+    "system": {
+      "cpu_core/instructions/": 1074027951.0,
+      "power/energy-cores/": 1.13,
+      "power/energy-pkg/": 3.57
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 77.221120666,
+    "system": {
+      "cpu_core/instructions/": 1085510343.0,
+      "power/energy-cores/": 1.14,
+      "power/energy-pkg/": 3.64
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 77.623515509,
+    "system": {
+      "cpu_core/instructions/": 946922913.0,
+      "power/energy-cores/": 0.92,
+      "power/energy-pkg/": 3.22
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 78.025719025,
+    "system": {
+      "cpu_core/instructions/": 1899466554.0,
+      "power/energy-cores/": 3.12,
+      "power/energy-pkg/": 5.67
+    },
+    "doall": {
+      "cpu_core/instructions/": 1031065482.0
+    }
+  },
+  {
+    "timestamp": 78.426728969,
+    "system": {
+      "cpu_core/instructions/": 2785779564.0,
+      "power/energy-cores/": 4.82,
+      "power/energy-pkg/": 7.51
+    },
+    "doall": {
+      "cpu_core/instructions/": 1890291234.0
+    }
+  },
+  {
+    "timestamp": 78.828091613,
+    "system": {
+      "cpu_core/instructions/": 2824274430.0,
+      "power/energy-cores/": 4.9,
+      "power/energy-pkg/": 7.56
+    },
+    "doall": {
+      "cpu_core/instructions/": 1856562438.0
+    }
+  },
+  {
+    "timestamp": 79.229526431,
+    "system": {
+      "cpu_core/instructions/": 2790109403.0,
+      "power/energy-cores/": 4.78,
+      "power/energy-pkg/": 7.53
+    },
+    "doall": {
+      "cpu_core/instructions/": 1888939921.0
+    }
+  },
+  {
+    "timestamp": 79.630714049,
+    "system": {
+      "cpu_core/instructions/": 2778084739.0,
+      "power/energy-cores/": 4.85,
+      "power/energy-pkg/": 7.61
+    },
+    "doall": {
+      "cpu_core/instructions/": 1856960692.0
+    }
+  },
+  {
+    "timestamp": 80.031743324,
+    "system": {
+      "cpu_core/instructions/": 4610408155.0,
+      "power/energy-cores/": 5.77,
+      "power/energy-pkg/": 9.01
+    },
+    "doall": {
+      "cpu_core/instructions/": 3744131182.0
+    }
+  },
+  {
+    "timestamp": 80.43310341,
+    "system": {
+      "cpu_core/instructions/": 5791488859.0,
+      "power/energy-cores/": 4.79,
+      "power/energy-pkg/": 7.39
+    },
+    "doall": {
+      "cpu_core/instructions/": 3128100243.0
+    }
+  },
+  {
+    "timestamp": 80.835045335,
+    "system": {
+      "cpu_core/instructions/": 1185409289.0,
+      "power/energy-cores/": 1.44,
+      "power/energy-pkg/": 4.04
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 81.23787232,
+    "system": {
+      "cpu_core/instructions/": 1097514941.0,
+      "power/energy-cores/": 1.09,
+      "power/energy-pkg/": 3.49
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 81.64022046,
+    "system": {
+      "cpu_core/instructions/": 883590022.0,
+      "power/energy-cores/": 0.9,
+      "power/energy-pkg/": 3.34
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 82.04278235,
+    "system": {
+      "cpu_core/instructions/": 819258087.0,
+      "power/energy-cores/": 0.78,
+      "power/energy-pkg/": 3.2
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 82.445318495,
+    "system": {
+      "cpu_core/instructions/": 1822356337.0,
+      "power/energy-cores/": 2.89,
+      "power/energy-pkg/": 5.48
+    },
+    "doall": {
+      "cpu_core/instructions/": 686108019.0
+    }
+  },
+  {
+    "timestamp": 82.846687507,
+    "system": {
+      "cpu_core/instructions/": 3085696411.0,
+      "power/energy-cores/": 5.6,
+      "power/energy-pkg/": 8.3
+    },
+    "doall": {
+      "cpu_core/instructions/": 1821788419.0
+    }
+  },
+  {
+    "timestamp": 83.248103524,
+    "system": {
+      "cpu_core/instructions/": 2749219977.0,
+      "power/energy-cores/": 4.77,
+      "power/energy-pkg/": 7.45
+    },
+    "doall": {
+      "cpu_core/instructions/": 1857100815.0
+    }
+  },
+  {
+    "timestamp": 83.651476452,
+    "system": {
+      "cpu_core/instructions/": 2994119067.0,
+      "power/energy-cores/": 5.45,
+      "power/energy-pkg/": 8.15
+    },
+    "doall": {
+      "cpu_core/instructions/": 1830409593.0
+    }
+  },
+  {
+    "timestamp": 84.052692675,
+    "system": {
+      "cpu_core/instructions/": 3105268697.0,
+      "power/energy-cores/": 5.99,
+      "power/energy-pkg/": 8.69
+    },
+    "doall": {
+      "cpu_core/instructions/": 1813719900.0
+    }
+  },
+  {
+    "timestamp": 84.454383215,
+    "system": {
+      "cpu_core/instructions/": 4011109636.0,
+      "power/energy-cores/": 7.13,
+      "power/energy-pkg/": 10.18
+    },
+    "doall": {
+      "cpu_core/instructions/": 2996916628.0
+    }
+  },
+  {
+    "timestamp": 84.85719061,
+    "system": {
+      "cpu_core/instructions/": 5813062303.0,
+      "power/energy-cores/": 6.16,
+      "power/energy-pkg/": 9.05
+    },
+    "doall": {
+      "cpu_core/instructions/": 4288161251.0
+    }
+  },
+  {
+    "timestamp": 85.259282307,
+    "system": {
+      "cpu_core/instructions/": 1253054793.0,
+      "power/energy-cores/": 1.33,
+      "power/energy-pkg/": 3.89
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 85.661284767,
+    "system": {
+      "cpu_core/instructions/": 1063992295.0,
+      "power/energy-cores/": 1.21,
+      "power/energy-pkg/": 3.89
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 86.063577797,
+    "system": {
+      "cpu_core/instructions/": 1239530146.0,
+      "power/energy-cores/": 1.56,
+      "power/energy-pkg/": 4.21
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 86.465357297,
+    "system": {
+      "cpu_core/instructions/": 951690050.0,
+      "power/energy-cores/": 1.09,
+      "power/energy-pkg/": 3.64
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 86.867507668,
+    "system": {
+      "cpu_core/instructions/": 1333008491.0,
+      "power/energy-cores/": 1.19,
+      "power/energy-pkg/": 3.75
+    },
+    "doall": {
+      "cpu_core/instructions/": 750482.0
+    }
+  },
+  {
+    "timestamp": 87.269411484,
+    "system": {
+      "cpu_core/instructions/": 751829843.0,
+      "power/energy-cores/": 0.91,
+      "power/energy-pkg/": 3.61
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 87.671758251,
+    "system": {
+      "cpu_core/instructions/": 1057895372.0,
+      "power/energy-cores/": 1.21,
+      "power/energy-pkg/": 3.73
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 88.075715299,
+    "system": {
+      "cpu_core/instructions/": 811239531.0,
+      "power/energy-cores/": 0.95,
+      "power/energy-pkg/": 3.35
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 88.478045409,
+    "system": {
+      "cpu_core/instructions/": 1191802328.0,
+      "power/energy-cores/": 1.4,
+      "power/energy-pkg/": 3.94
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 88.879772396,
+    "system": {
+      "cpu_core/instructions/": 1116995185.0,
+      "power/energy-cores/": 1.25,
+      "power/energy-pkg/": 3.91
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 89.282241569,
+    "system": {
+      "cpu_core/instructions/": 896926772.0,
+      "power/energy-cores/": 1.03,
+      "power/energy-pkg/": 3.61
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 89.684407887,
+    "system": {
+      "cpu_core/instructions/": 799499094.0,
+      "power/energy-cores/": 0.88,
+      "power/energy-pkg/": 3.45
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  },
+  {
+    "timestamp": 90.001694617,
+    "system": {
+      "cpu_core/instructions/": 863348783.0,
+      "power/energy-cores/": 0.91,
+      "power/energy-pkg/": 2.92
+    },
+    "doall": {
+      "cpu_core/instructions/": 0
+    }
+  }
+]

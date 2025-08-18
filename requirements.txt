@@ -1,5 +1,6 @@
 sudo sh -c 'apt update ; apt install -y build-essential'
 sudo apt install linux-tools-generic
-sudo ln -sf /usr/lib/linux-tools/6.5.0-25-generic/perf /usr/local/bin/perf
+sudo ln -sf /usr/lib/linux-tools/6.8.0-71-generic/perf /usr/local/bin/perf
+if above line doesn't work check ~/bin/perf file and usr/local/bin/perf and /usr/lib/linux-tools/
 find /usr/lib/linux-tools -name perf
 libpfm4 for perf_event_open
