@@ -1,0 +1,20 @@
+[Unit]
+Description=PowerDaemon - cgroup power monitoring   # Human-readable description
+After=network.target                                # Start only after the network target (optional)
+
+[Service]
+Type=simple                                        # Simple service, systemd considers it running while the process is active
+User=root                                          # Run as root to access cgroups & perf
+Group=root                                         # Run as root group
+
+ExecStart=/usr/bin/python3 /usr/local/bin/powerdaemon/daemon.py  # Full path to the main daemon script
+
+Restart=always                                     # Restart automatically if it crashes
+RestartSec=5                                      # Wait 5 seconds before restarting
+
+StandardOutput=syslog                              # Redirect stdout to syslog
+StandardError=syslog                               # Redirect stderr to syslog
+SyslogIdentifier=powerdaemon                       # Label for syslog entries
+
+[Install]
+WantedBy=multi-user.target                         # Start during normal multi-user boot

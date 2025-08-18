@@ -1,0 +1,8 @@
+Package: powerdaemon
+Version: 0.1
+section: utils
+Priority: optional
+Architecture: all
+Depends: python3, python3-inotify, linux-tools-generic, python3-yaml
+Maintainer: Ethan Weir <weircode@gmail.com>
+Description: PowerDaemon to monitor cgroups using perf. This automatically collects different perf counters when processes are added to cgroups specified in the config file.

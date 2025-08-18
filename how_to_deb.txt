@@ -1,0 +1,6 @@
+1. from PowerDaemon folder run
+dpkg-deb --build PowerDaemon
+produces the .deb file
+3. install and timestamp
+sudo dpkg -i PowerDaemon.deb
+systemctl status powerdaemon

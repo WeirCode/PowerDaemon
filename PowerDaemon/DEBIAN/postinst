@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+CGROUP_PATH="/sys/fs/cgroup/sensor"
+SERVICE_NAME="powerdaemon.service"
+
+echo "Running PowerDaemon post-install script ..."
+
+if [! -d "$CGROUP_PATH" ]; then
+    echo "Creating cgroup at $CGROUP_PATH"
+    mkdir "CGROUP_PATH"
+fi
+chmod 755 "$CGROUP_PATH"
+
+echo "Enabling systemd service $SERVICE_NAME"
+systemctl daemon-reload
+systemctl enable "$SERVICE_NAME"
+systemctl start "$SERVICE_NAME"
+
+#add later to check perf and install correctly if needed
+
+echo "PowerDaemon post-install finished."
+
+exit 0

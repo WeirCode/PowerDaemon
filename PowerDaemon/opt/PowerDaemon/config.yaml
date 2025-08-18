@@ -1,0 +1,24 @@
+# Configuration for PowerDaemon
+
+# Path to the cgroup to monitor
+cgroup_path: "/sys/fs/cgroup/sensor"  
+
+# Sampling interval in seconds for collecting perf counters
+# Lower values = more frequent sampling, higher CPU overhead
+sampling_interval: 1.0  
+
+# Maximum runtime per monitored process (seconds)
+# 0 = unlimited, useful if you want to auto-stop long runs
+#max_runtime: 0  
+
+# Log settings
+log_file: "/var/log/powerdaemon.log"    # File path for daemon logs
+log_level: "INFO"                        # Logging level: DEBUG, INFO, WARNING, ERROR
+
+# Optional thresholds (future use)
+# Example: stop monitoring if power usage drops below threshold (Joules/sec)
+#power_threshold: 0.1
+
+# Path to the perf events JSON file (generated during init)
+perf_event_file: "/usr/local/bin/powerdaemon/pc_info.json"
+output_file: "/opt/PowerDaemon/measurements.jsonl"
